@@ -31,3 +31,33 @@ window.addEventListener('load', function () {
         document.body.classList.add('dark-mode');
     }
 });
+
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const videos = document.querySelectorAll("video[data-src]");
+
+    const loadVideo = (video) => {
+        const source = document.createElement('source');
+        source.src = video.dataset.src;
+        source.type = 'video/mp4';
+        video.appendChild(source);
+        video.load();
+    };
+
+    const observer = new IntersectionObserver((entries, obs) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                loadVideo(entry.target);
+                obs.unobserve(entry.target);
+            }
+        });
+    }, {
+        threshold: 0.3
+    });
+
+    videos.forEach(video => {
+        observer.observe(video);
+    });
+});
+

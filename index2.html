@@ -16,15 +16,28 @@
 
 <body>
 
-    <div class="">
-        <nav class="navbar bg-sand ">
+    <div class="container-fluid">
+
+        <nav class="navbar navbar-expand-lg bg-sand">
             <div class="container-fluid">
-                <a class="navbar-brand ps-5"><img src="images/logo.jpg" width="100px" height="100px"
-                        style="border-radius: 50%;" alt="Pure Science"></a>
-                <div class="d-flex">
-                    <ul class="nav">
+
+                <!-- Logo (left) -->
+                <a class="navbar-brand ps-3" href="#">
+                    <img src="images/logo.jpg" alt="Pure Science" width="80" height="80" class="rounded-circle">
+                </a>
+
+                <!-- Toggler for mobile -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Navbar links (center) and Dark Mode Button (right) -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <!-- Centered nav links -->
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active text-seadarker" aria-current="page" href="#home">الصفحه الرئيسيه</a>
+                            <a class="nav-link  text-seadarker" aria-current="page" href="#home">الصفحه الرئيسيه</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-seadarker" href="#about">من انا</a>
@@ -33,182 +46,212 @@
                             <a class="nav-link text-seadarker" href="#contact">تواصل معي</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-seadarker border-seadarker" href="index.html">English</a>
+                            <a class="nav-link text-seadarker" href="#vid">فيديوهاتي</a>
                         </li>
                         
-                        
                     </ul>
+
+                    <!-- Dark Mode Toggle (right) -->
+                    <div class="d-flex">
+                        <a class="btn btn-outline-secondary ms-auto me-3" href="index.html">English</a>
+
+                        <button id="darkModeToggle" class="btn btn-outline-secondary ms-auto me-3">🌙</button>
+                    </div>
                 </div>
             </div>
         </nav>
-        
-        <button id="darkModeToggle" class="btn btn-outline-secondary me-3 fixed-element">🌙  </button>
+
+
+
         <!-- slider -->
-        <div id="carouselExampleDark" class="carousel carousel-dark slide">
-            <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
-                    aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
-                    aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
-                    aria-label="Slide 3"></button>
-            </div>
+        <div id="carouselExampleAutoplaying" class="carousel slide " data-bs-ride="carousel">
             <div class="carousel-inner">
-                <div class="carousel-item active" data-bs-interval="10000">
-                    <img src="images/pexels-w-w-299285-889929.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5 class="text-sand">محتوى شيق وممتع</h5>
-                        <p class="text-bink">اقوم بشرح كل ما هو جديد وغريب</p>
-                    </div>
-                </div>
-                <div class="carousel-item" data-bs-interval="2000">
-                    <img src="images/pexels-pixabay-64219.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5 class="text-sand">محتوى شيق وممتع</h5>
-                        <p class="text-bink">اقوم بشرح كل ما هو جديد وغريب</p>
-                    </div>
+                <div class="carousel-item active">
+                    <img src="images/pexels-adam-ernster-53443017-7767974.jpg" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                    <img src="images/pexels-pawelkalisinski-1076758.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
-                        <h5 class="text-sand">محتوى شيق وممتع</h5>
-                        <p class="text-bink">اقوم بشرح كل ما هو جديد وغريب</p>
+                    <img src="images/pexels-belle-co-99483-847393.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="images/pexels-george-desipris-726478.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <div id="about" class="bg-sand p-5 m-0 border-sand">
+            <h1 class="text-seadarkest text-center">من انا</h1>
+            <hr class="text-darksand">
+            <div class="row">
+                <div class="col-lg-6 col-md-12  ">
+                    <img src="images/pexels-pawelkalisinski-1076758.png" class="img-fluid animated-img" />
+                </div>
+                <div class="col-lg-6 col-md-12  ">
+                    <div class="leftside">
+                        <p class="fs-3 text-center text-seadarker d-flex d-flex align-items-center"> أنا محمد مجدي، خريج علوم، شغوفٌ بعالم البحار والحياة البحرية. من خلال قناتي، أشارككم حماسي ومعرفتي بالمحيط ومخلوقاته الرائعة. يسعدني أن أكون مصدر إلهامٍ وتعلمٍ لمن يرغبون في استكشاف عجائب البحر. انضموا إليّ في هذه الرحلة.
+                        </p>
+                        <hr class="text-darksand">
+                        <h3 class="text-center text-seadarkest p-5">روابط التواصل</h3>
+                        <ul class="d-flex justify-content-around social flex-wrap">
+                            <li>
+                                <a href="https://www.youtube.com/@pure_scienceYT/videos">
+                                    <h1><i class="bi bi-youtube  text-danger"></i></h1>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.facebook.com/profile.php?id=61566881681922">
+                                    <h1><i class="bi bi-facebook text-primary"></i></i></h1>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <h1><i class="bi bi-instagram text-seadarker"></i></h1>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <h1><i class="bi bi-tiktok text-darksand"></i></h1>
+                                </a>
+                            </li>
+                        </ul>
+
                     </div>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">السابق</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">التالي</span>
-            </button>
         </div>
-    </div>
-    <div id="about" class="bg-sand p-5 m-0 border-sand">
-        <h1 class="text-seadarker text-center">من انا</h1>
-        <hr class="text-darksand">
-        <div class="row">
-            <div class="col-md-6 col-sm-12 ">
-                <div class="rightside d-flex flex-wrap">
-                    <img class="galery" src="images/pexels-asadphoto-457881.jpg" alt="">
-                    <img class="galery" src="images/pexels-belle-co-99483-847393.jpg" alt="">
-                    <img class="galery" src="images/pexels-eliannedipp-4666751.jpg" alt="">
-                    <img class="galery" src="images/pexels-iriser-1086584.jpg" />
-                    <img class="galery" src="images/pexels-npandey-2446439.jpg" alt="">
-                    <img class="galery" src="images/pexels-pawelkalisinski-1076758.jpg" alt="">
+        <div id="contact">
+            <h1 class="text-center text-darksand p-5">لا تتردد في التواصل معي</h1>
+            <div class="row">
+                <ul class="d-flex justify-content-around contact">
+                    <li>
+                        <a href="https//wa.me/+201067605447">
+                            <h1><i class="bi bi-whatsapp text-success"></i></h1>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https//tel/+201067605447">
+                            <h1><i class="bi bi-telephone text-primary"></i></h1>
+                        </a>
+                    </li>
 
+                </ul>
+                <div class="col-md-6 col-sm-12">
+                    <div class="contactinfo">
+
+                        <ul class="contact">
+                            <li style="flex: 1;">
+                                <div class="ratio ratio-16x9">
+                                    <iframe src="https://www.google.com/maps/embed?pb=..." style="border:0;"
+                                        allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                                    </iframe>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <div class="contactform bg-sand p-5 border-seadarker me-3 mb-3">
+                        <form>
+                            <div class="mb-3">
+                                <label for="title" class="form-label">الموضوع</label>
+                                <input type="text" class="form-control" id="title" aria-describedby="emailHelp">
+                            </div>
+                            <div class="mb-3">
+                                <label for="Message" class="form-label">الرساله</label>
+                                <textarea class="form-control" id="Message" rows="3"></textarea>
+
+                            </div>
+
+                            <button type="submit" id="messagebtn" class="btn btn-primary">ارسال</button>
+                        </form>
+                    </div>
                 </div>
             </div>
-            <div class="col-md-6 col-sm-12 ">
-                <div class="leftside">
-                    <p class="fs-3 text-center text-seadarker d-flex d-flex align-items-center"> أنا محمد مجدي، خريج علوم، شغوفٌ بعالم البحار والحياة البحرية. من خلال قناتي، أشارك حماسي ومعرفتي بالمحيط ومخلوقاته الرائعة. يسعدني أن أكون مصدر إلهامٍ وتعلمٍ لمن يرغبون في استكشاف عجائب البحر. انضموا إليّ في هذه الرحلة 
-                    </p>
-                    <hr class="text-darksand">
-                    <h3 class="text-center text-darksand">روابط التواصل</h3>
-                    <ul class="d-flex justify-content-around social">
-                        <li>
-                            <a href="https://www.youtube.com/@pure_scienceYT/videos">
-                                <h1><i class="bi bi-youtube  text-danger"></i></h1>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://www.facebook.com/profile.php?id=61566881681922">
-                                <h1><i class="bi bi-facebook text-primary"></i></i></h1>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <h1><i class="bi bi-instagram text-seadarker"></i></h1>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <h1><i class="bi bi-tiktok text-darksand"></i></h1>
-                            </a>
-                        </li>
-                    </ul>
 
-                </div>
-            </div>
         </div>
-    </div>
-    <div id="contact">
-        <h1 class="text-center text-darksand p-5">لا تتردد في الاتصال بي في أي وقت</h1>
-        <div class="row">
-            <div class="col-md-6 col-sm-12">
-                <div class="contactinfo">
-                    <ul class="d-flex justify-content-around contact">
-                        <li>
-                            <a href="https//wa.me/+201067605447">
-                                <h1><i class="bi bi-whatsapp text-success"></i></h1>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https//tel/+201067605447">
-                                <h1><i class="bi bi-telephone text-primary"></i></h1>
-                            </a>
-                        </li>
-                        <li>
-                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54695.26706161152!2d31.341639795756002!3d31.041453146758858!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f79db7a9053547%3A0xf8dab3bbed766c97!2sMansoura%2C%20Mansoura%20Qism%202%2C%20El%20Mansoura%2C%20Dakahlia%20Governorate!5e0!3m2!1sen!2seg!4v1747043417232!5m2!1sen!2seg" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                        </li>
-                    </ul>
+        <div id="vid" class="text-seadarker bg-sand p-5 text-center " style="border: 1px solid gold ;">
+            <h1 class="text-center mb-3 ">فيديوهاتي</h1>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                   
                 </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="ratio ratio-16x9">
+                        <iframe src="https://www.youtube.com/embed/F91jb0NGUBk" title="YouTube video"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                   
+                </div>
+                
             </div>
-            <div class="col-md-6 col-sm-12">
-                <div class="contactform bg-sand p-5 border-seadarker me-3 mb-3">
-                    <form>
-                        <div class="mb-3">
-                            <label for="title" class="form-label">عنوان الرساله</label>
-                            <input type="text" class="form-control" id="title" aria-describedby="emailHelp">
+            <button class="btn btn-success m-5">اعرض المزيد</button>
+
+        </div>
+        <div id="footer" class="footer-container bg-darksand py-5">
+            <div class="container">
+                <div class="row text-center text-md-start align-items-center">
+
+                    <!-- Logo -->
+                    <div class="col-md-4 mb-4 mb-md-0">
+                        <a class="navbar-brand" href="#">
+                            <img src="images/logo.jpg" width="100" height="100" class="rounded-circle"
+                                alt="Pure Science Logo">
+                        </a>
+                    </div>
+
+                    <!-- Social Links -->
+                    <div class="col-md-4 mb-4 mb-md-0">
+                        <ul class="list-unstyled d-flex justify-content-center gap-4 flex-wrap">
+                            <li>
+                                <a href="https://www.youtube.com/@pure_scienceYT/videos" aria-label="YouTube">
+                                    <i class="bi bi-youtube fs-2 text-danger"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://www.facebook.com/profile.php?id=61566881681922" aria-label="Facebook">
+                                    <i class="bi bi-facebook fs-2 text-primary"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" aria-label="Instagram">
+                                    <i class="bi bi-instagram fs-2 text-seadarker"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" aria-label="TikTok">
+                                    <i class="bi bi-tiktok fs-2 text-darksand"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Footer Images -->
+                    <div class="col-md-4">
+                        <div class="d-flex flex-wrap justify-content-center gap-2">
+
+                            <img src="images/pexels-pixabay-68744.png" class="img-fluid" width="60" alt="">
                         </div>
-                        <div class="mb-3">
-                            <label for="Message" class="form-label">محتوى الرساله</label>
-                            <textarea class="form-control" id="Message" rows="3"></textarea>
+                    </div>
 
-                        </div>
-
-                        <button type="submit" id="messagebtn" class="btn btn-primary">ارسال</button>
-                    </form>
                 </div>
             </div>
         </div>
 
     </div>
-<div id="footer" class="footer-container d-flex justify-content-around flex-wrap bg-sand">
 
-        <div class="logo pt-4">
-            <a class="navbar-brand ps-5"><img src="images/logo.jpg" width="100px" height="100px"
-                    style="border-radius: 50%;" alt="Pure Science"></a>
-        </div>
-        <div class="sociallinks pt-5">
-            <ul class="d-flex justify-content-between flex-wrap social">
-                <li>
-                    <a href="https://www.youtube.com/@pure_scienceYT/videos">
-                        <h1><i class="bi bi-youtube  text-danger"></i></h1>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.facebook.com/profile.php?id=61566881681922">
-                        <h1><i class="bi bi-facebook text-primary"></i></i></h1>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <h1><i class="bi bi-instagram text-seadarker"></i></h1>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <h1><i class="bi bi-tiktok text-darksand"></i></h1>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
 
 
     <script src="js/index.js"></script>
