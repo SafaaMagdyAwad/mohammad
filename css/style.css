@@ -36,7 +36,7 @@
 }
 .fixed-element {
   position: fixed;
-  top: 100px;      /* Distance from top */
+  top: 200px;      /* Distance from top */
   right: 20px;    /* Distance from right */
   z-index: 999;   /* Make sure it's on top */
 }
