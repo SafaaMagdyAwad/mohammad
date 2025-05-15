@@ -134,6 +134,16 @@ body.dark-mode .text-darksand {
   color: #f1f1f1 !important;
 }
 
+.navbar-toggler {
+            background-color: #343a40;
+            /* Dark background */
+            border: 1px solid white;
+        }
+
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg' %3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22' /%3E%3C/svg%3E");
+
+            }
 
 /* animation */
 
@@ -158,3 +168,7 @@ list-style: none;
   width: 200px;
   height: 200px;
 }
+
+
+    
+
